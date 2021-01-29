@@ -1,6 +1,6 @@
 import { getInputDirection} from './input-phone.js'
 
-export const SNAKE_SPEED = prompt("Enter Level : ")*1;
+// export const SNAKE_SPEED = prompt("Enter Level : ")*1;
 const snakeBody = [{ x: 10, y: 11 }]
 let newSegments = 0;
 

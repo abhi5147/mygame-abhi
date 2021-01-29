@@ -52,7 +52,7 @@ h2{
     display: none;
 }
 body::before{
-    background: url('./static/pic.jpg') no-repeat center center;
+    background: center/cover no-repeat url('./static/pic.jpg');
     opacity: 0.5;
     content: "";
     width: 100%;
