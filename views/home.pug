@@ -1,0 +1,13 @@
+extends base.pug
+
+block style
+    style
+        include ../static/stylehome.css
+
+block content
+        h1 Welcome to My Site
+        div#container
+            h2 Snake
+            div#item Mode
+            a(href="/snake-desk") Desktop
+            a(href="/snake-phone") Phone

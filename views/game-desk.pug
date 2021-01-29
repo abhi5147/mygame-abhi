@@ -1,0 +1,15 @@
+extends base.pug
+
+block scripts
+    script(src="/static/game-desk.js" defer type = "module")
+
+block style
+    style
+        include ../static/style-desk.css
+
+block content
+    div.score 
+        div#b1 Score : 
+        div#b2
+    div.container
+        div#game-board
