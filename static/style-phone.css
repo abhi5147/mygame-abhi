@@ -3,28 +3,6 @@
     box-sizing: border-box;
     padding: 0;
 }
-#navbar{
-    background-color: rgb(221, 120, 120);
-}
-#navbar ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-#navbar li{
-    list-style: none;
-    padding: 10px 0px;
-}
-#navbar li a{
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-}#navbar li a:hover{
-    text-decoration: none;
-    padding: 10px;
-    color: black;
-    background-color: blanchedalmond;
-}
 .container{
     display: flex;
     align-items: center;

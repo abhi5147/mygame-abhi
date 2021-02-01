@@ -23,6 +23,9 @@ app.get('/snake-desk', (req, res)=>{
 app.get('/snake-phone', (req, res)=>{
     res.render('game-phone.pug');
 })
+app.get('/tictactoe', (req, res)=>{
+    res.render('index-tictactoe.pug');
+})
 app.get('/contact', (req, res)=>{
     res.render('contact.pug');
 })

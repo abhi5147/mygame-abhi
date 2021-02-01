@@ -3,11 +3,23 @@ extends base.pug
 block style
     style
         include ../static/stylehome.css
+block nav
+        nav#navbar.top
+            ul
+                li #[a(href="/") Home]
+                li #[a(href="/about") About]
+                li #[a(href="/contact") Contact Us]
+                li #[a(href="/help") Help]
 
 block content
+
         h1 Welcome to My Site
-        div#container
-            h2 Snake
-            div#item Choose Mode
-            a(href="/snake-desk") Desktop
-            a(href="/snake-phone") Phone
+        div.section
+            div#container
+                h2 Snake
+                div#item Mode
+                a(href="/snake-desk") Desktop
+                a(href="/snake-phone") Phone
+            div#tictactoe 
+                h2 Tic Tac Toe
+                a(href="/tictactoe") Play

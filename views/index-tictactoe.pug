@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../static/style-tictactoe.css">
+    <script src="/static/game-tictactoe.js" defer></script>
+</head>
+<body>
+    <div class="section">
+        <button class="btnscr" id="btnscr">Score</button>
+        <a href="/" id="back">Exit</a>
+    </div>
+    <div id="modemain">
+        <div>Mode</div>
+        <button class="cmode" id="cmode1">Computer</button>
+        <button class="cmode" id="cmode2">Manual</button>
+    </div>
+    <div class="board" id="board">
+        <div class="box" data-cell id="0"></div>
+        <div class="box" data-cell id="1"></div>
+        <div class="box" data-cell id="2"></div>
+        <div class="box" data-cell id="3"></div>
+        <div class="box" data-cell id="4"></div>
+        <div class="box" data-cell id="5"></div>
+        <div class="box" data-cell id="6"></div>
+        <div class="box" data-cell id="7"></div>
+        <div class="box" data-cell id="8"></div>
+    </div>
+    <div class="winning" id="winning">
+        <div class="text" data-winning-message-text></div>
+        <button class="btn" id="btn">Play Again</button>
+    </div>
+    <div class="score" id="score">
+        <div class="">Total Score</div>
+        <div class="scoreBoard">
+            <div id="score1"></div>
+            <div id="player1"></div>
+        </div>
+        <div class="scoreBoard">
+            <div id="score2"></div>
+            <div id="player2"></div>
+        </div>
+        <button class="play" id="play">Resume</button>
+    </div>
+</body>
+</html>
