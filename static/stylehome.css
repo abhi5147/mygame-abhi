@@ -124,9 +124,3 @@ body::before{
 #container h2{
     margin-top: 2.5rem;
 }
-
-@media(max-width: 600px){
-    .section{
-        flex-direction: column;
-    }
-}
