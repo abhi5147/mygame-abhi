@@ -100,3 +100,83 @@ body::before{
     visibility: visible;
     background: center/cover no-repeat url('./static/right.jpg');
 }
+.winning{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 5rem;
+    z-index: 200;
+}
+div a{
+    text-decoration: none;
+    width: 10rem;
+    font-size: 1rem;
+    height: 4rem;
+    color: black;
+    background-color: lightpink;
+    padding: .6rem .6rem;
+    border-radius: 0.2rem;
+    border: 2px solid black;
+}
+div a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    width: 20rem;
+    font-size: 3rem;
+    background-color: white;
+    color: black;
+}
+#levelSection{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    z-index: 200;
+}
+#level{
+    display: flex;
+    flex-direction: row;
+}
+.lev{
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    color: black;
+    border: 2px solid salmon;
+    border-radius: 2px;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: .3rem;
+}
+.lev:hover{
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}

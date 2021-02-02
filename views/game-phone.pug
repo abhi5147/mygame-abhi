@@ -8,12 +8,12 @@ block style
         include ../static/style-phone.css
 
 block content
-    div.score 
+    div.score#score
         div#b1 Score : 
         div#b2
-    div.container
+    div.container#container
         div#game-board
-    div.item
+    div.item#item
         div.section
             div#box1.box
             div#box2.box
@@ -24,3 +24,21 @@ block content
             div#box7.box
             div#box8.box
             div#box9.box
+    div.winning#winning 
+        div.section1
+            div Game Over
+            div#text
+            div #[a(href="/snake-phone") Play Again]
+    div#levelSection
+        div Choose Level
+        div#level 
+            div.lev#level1 1
+            div.lev#level2 2
+            div.lev#level3 3
+            div.lev#level4 4
+            div.lev#level5 5
+            div.lev#level6 6
+            div.lev#level7 7
+            div.lev#level8 8
+            div.lev#level9 9
+            div.lev#level10 10

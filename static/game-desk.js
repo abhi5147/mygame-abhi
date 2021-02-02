@@ -7,15 +7,16 @@ let totalScore=0;
 let gameOver=false;
 const gameBoard = document.getElementById('game-board')
 
+
 function main(currentTime){
     if(getScore())
         totalScore+=SNAKE_SPEED;
     document.getElementById('b2').innerHTML = totalScore;
     if(gameOver){
-       if(confirm(`Score : ${totalScore}, You Lost. Press Ok to Restart`)){
-        window.location = '/snake-desk'
-       }
-       return
+        document.getElementById('text').innerText = `Score : ${totalScore}`;
+        document.getElementById('winning').style.display = 'flex';
+        document.getElementById('score').style.display = 'none';
+        document.getElementById('container').style.display = 'none';
     }
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime)/1000;
