@@ -9,10 +9,17 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "serve": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Abhi",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhi5147/mygame-abhi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhi5147/mygame-abhi/issues"
+  },
+  "homepage": "https://github.com/abhi5147/mygame-abhi#readme",
   "description": ""
 }

@@ -4,7 +4,7 @@ body{
 }
 
 body::before{
-    background: #2345;
+    background-color: #2345;
     opacity: 0.5;
     content: "";
     width: 100%;
@@ -12,7 +12,7 @@ body::before{
     margin: 0;
     z-index: -1;
     top: 0px;
-    position: fixed;
+    position: absolute;
 }
 
 body{
@@ -163,14 +163,11 @@ body{
 } */
 
 #footer{
-    position: absolute;
+    position: fixed;
     left: 0;
+    bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
     padding: 5px 0;
-}
-
-@media screen and (max-width: 600px){
-
 }
