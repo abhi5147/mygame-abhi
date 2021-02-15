@@ -1,12 +1,11 @@
-import {update as updateSnake, draw as drawSnake,SNAKE_SPEED,getSnakeHead,snakeIntersection, onSnake } from './snake-desk.js'
-import {update as updateFood, draw as drawFood , getScore} from './food-desk.js'
-import {outsideGrid} from './grid-desk.js'
+import {update as updateSnake, draw as drawSnake,SNAKE_SPEED,getSnakeHead,snakeIntersection, onSnake } from './snake.js'
+import {update as updateFood, draw as drawFood , getScore} from './food.js'
+import {outsideGrid} from './grid.js'
 
 let lastRenderTime = 0;
 let totalScore=0;
 let gameOver=false;
-const gameBoard = document.getElementById('game-board')
-
+const gameBoard = document.getElementById('game-board');
 
 function main(currentTime){
     if(getScore())
@@ -17,6 +16,7 @@ function main(currentTime){
         document.getElementById('winning').style.display = 'flex';
         document.getElementById('score').style.display = 'none';
         document.getElementById('container').style.display = 'none';
+        document.getElementById('item').style.display = 'none';
     }
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime)/1000;
@@ -26,6 +26,7 @@ function main(currentTime){
     update()
     draw()
 }
+
 window.requestAnimationFrame(main)
 
 function update() {

@@ -3,7 +3,6 @@
     box-sizing: border-box;
     padding: 0;
 }
-
 .container{
     display: flex;
     align-items: center;
@@ -14,8 +13,8 @@
 #game-board{
     margin: 4px 0;
     background-color: rgb(253, 253, 182);
-    width: 70vmin;
-    height: 70vmin;
+    width: 80vmin;
+    height: 80vmin;
     display: grid;
     grid-template-rows: repeat(21,1fr);
     grid-template-columns: repeat(21,1fr);
@@ -41,7 +40,7 @@
 .score{
     border: 3px solid grey;
     background-color: white;
-    width: 16%;
+    width: 25%;
     margin: 5px auto;
     margin-top: 10px;
     height: 40px;
@@ -52,7 +51,7 @@
 #b1{
     padding: 2px;
     margin-top: 1px;
-    margin-left: 37px;
+    margin-left: 72px;
     font-size: 25px;
 }
 #b2{
@@ -62,7 +61,7 @@
     font-size: 25px;
 }
 body::before{
-    background: center/cover no-repeat url('./static/pic3.jpg');
+    background: #333;
     opacity: 0.8;
     content: "";
     width: 100%;
@@ -71,6 +70,35 @@ body::before{
     z-index: -1;
     top: 0px;
     position: absolute;
+}
+.section{
+    height: 700px;
+    width: 700px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px;
+}
+.box{
+    visibility: hidden;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+#box2{
+    visibility: visible;
+    background: center/cover no-repeat url('static/snake/photo/up.jpg');
+}
+#box8{
+    visibility: visible;
+    background: center/cover no-repeat url('static/snake/photo/down.jpg');
+}
+#box4{
+    visibility: visible;
+    background: center/cover no-repeat url('static/snake/photo/left.jpg');
+}
+#box6{
+    visibility: visible;
+    background: center/cover no-repeat url('static/snake/photo/right.jpg');
 }
 .winning{
     display: none;
@@ -104,7 +132,7 @@ div a:hover{
     color: white;
     border: 2px solid white;
 }
-.section{
+.section1{
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -5,38 +5,28 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 
-// EXPRESS SPECIFIC STUFF
-app.use('/static', express.static('static')) // For serving static files
+
+app.use('/static', express.static('static'))
 app.use(express.urlencoded())
 
-// PUG SPECIFIC STUFF
-app.set('view engine', 'pug') // Set the template engine as pug
-app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
-// ENDPOINTS
+app.set('view engine', 'pug')
+app.set('views', path.join(__dirname, 'views'))
+
+
 app.get('/', (req, res)=>{
     res.render('home.pug');
 })
-app.get('/snake-desk', (req, res)=>{
-    res.render('game-desk.pug');
-})
-app.get('/snake-phone', (req, res)=>{
-    res.render('game-phone.pug');
+app.get('/snake', (req, res)=>{
+    res.render('snake.pug');
 })
 app.get('/tictactoe', (req, res)=>{
-    res.render('index-tictactoe.pug');
-})
-app.get('/contact', (req, res)=>{
-    res.render('contact.pug');
-})
-app.get('/about', (req, res)=>{
-    res.render('about.pug');
+    res.render('tic-tac-toe.pug');
 })
 app.get('/help', (req, res)=>{
     res.render('help.pug');
 })
  
-//Start Server
 app.listen(port,()=>{
     console.log(`THis application started succesfully on port ${port}`);
 })

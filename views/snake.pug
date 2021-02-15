@@ -1,11 +1,14 @@
 extends base.pug
 
+block title
+    title Snake
+
 block scripts
-    script(src="/static/game-phone.js" defer type = "module")
+    script(src="/static/snake/js/game.js" defer type = "module")
 
 block style
     style
-        include ../static/style-phone.css
+        include ../static/snake/css/style.css
 
 block content
     div.score#score
@@ -28,17 +31,8 @@ block content
         div.section1
             div Game Over
             div#text
-            div #[a(href="/snake-phone") Play Again]
+            div #[a(href="/snake") Play Again]
     div#levelSection
         div Choose Level
-        div#level 
-            div.lev#level1 1
-            div.lev#level2 2
-            div.lev#level3 3
-            div.lev#level4 4
-            div.lev#level5 5
-            div.lev#level6 6
-            div.lev#level7 7
-            div.lev#level8 8
-            div.lev#level9 9
-            div.lev#level10 10
+        input(type="range", name="", id="level")
+        button#playBtn Play

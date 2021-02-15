@@ -175,7 +175,7 @@ body{
     color: white;
 }
 body::before{
-    background: center/cover no-repeat url('pic3-tictactoe.jpg');
+    background: #234;
     opacity: 0.8;
     content: "";
     width: 100%;
