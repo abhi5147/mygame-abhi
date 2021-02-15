@@ -1,11 +1,10 @@
-*{
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body::before{
-    background-color: #2345;
+    background: #2345;
     opacity: 0.5;
     content: "";
     width: 100%;
@@ -16,11 +15,16 @@ body::before{
     position: fixed;
 }
 
+body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .top{
     overflow: hidden;
     background-color: rgb(98, 98, 255);
 }
-
 .top a{
     float: left;
     display: block;
@@ -62,26 +66,31 @@ body::before{
     }
 }
 
-#container{
+/* #container{
+    position: relative;
     width: 100%;
     z-index: -1;
-}
+    height: 86%;
+} */
 
-h1{
+/* h1{
+    position: relative;
     margin-top: 25px;
     text-align: center;
     font-size: 2.7rem;
 }
 
 .section{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 3.4rem;
+    height: 85%;
 }
 
 #snake{
+    position: relative;
     width: 19rem;
     height: 25rem;
     border: 4px solid rgb(54, 53, 53);
@@ -97,6 +106,7 @@ h1{
 }
 
 #tictactoe{
+    position: relative;
     width: 19rem;
     height: 25rem;
     border: 4px solid rgb(54, 53, 53);
@@ -150,39 +160,17 @@ h1{
     position: relative;
     bottom: 1.3rem;
     font-size: 2em;
-}
+} */
 
 #footer{
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
-    font-size: 17px;
-    padding: 6px;
+    padding: 5px 0;
 }
 
-
 @media screen and (max-width: 600px){
-    #container{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-    .section{
-        flex-direction: column;
-    }
-    #snake{
-        margin: 2rem 0;
-        width: 80%;
-    }
-    #tictactoe{
-        margin: 2rem 0;
-        width: 80%;
-    }
-    #footer{
-        position: relative;
-    }
+
 }
