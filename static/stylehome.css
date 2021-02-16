@@ -191,8 +191,8 @@ h1{
         width: 80%;
     }
     #footer{
-        position: absolute;
-        bottom: auto;
+        position: relative;
+        top: 1.6rem;
         font-size: .6rem;
     }
 }
