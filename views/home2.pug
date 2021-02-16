@@ -1,0 +1,34 @@
+extends base.pug
+
+block title
+    title Game
+
+block scripts
+    script(src="/static/home.js")
+
+block style
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    style
+        include ../static/stylehome.css
+block nav
+   nav#navbar.top
+       a(href="/") Home
+       a(href="/snake") Snake
+       a(href="/tictactoe") Tic-Tac-Toe
+       a(href="/help") Help
+       a(href="javascript:void(0);" class="icon" onclick="myFunction()")
+           <i class="fa fa-bars"></i>
+
+//- block content
+//-         div#container
+//-             h1 Welcome to My Game
+//-             div.section
+//-                 div#snake
+//-                     h2 Snake
+//-                     a(href="/snake") Play
+//-                 div#tictactoe 
+//-                     h2 Tic Tac Toe
+//-                     a(href="/tictactoe") Play
+
+//- block footer
+//-     div#footer Copyright 2021 - My Game | All Rights Reserved
