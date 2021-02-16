@@ -1,23 +1,23 @@
 extends base.pug
 
-//- block title
-//-     title Game
+block title
+    title Game
 
-//- block scripts
-//-     script(src="/static/home.js")
+block scripts
+    script(src="/static/home.js")
 
-//- block style
-//-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-//-     style
-//-         include ../static/stylehome.css
-//- block nav
-//-         nav#navbar.top
-//-             a(href="/") Home
-//-             a(href="/snake") Snake
-//-             a(href="/tictactoe") Tic-Tac-Toe
-//-             a(href="/help") Help
-//-             a(href="javascript:void(0);" class="icon" onclick="myFunction()")
-//-                 <i class="fa fa-bars"></i>
+block style
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    style
+        include ../static/stylehome.css
+block nav
+   nav#navbar.top
+       a(href="/") Home
+       a(href="/snake") Snake
+       a(href="/tictactoe") Tic-Tac-Toe
+       a(href="/help") Help
+       a(href="javascript:void(0);" class="icon" onclick="myFunction()")
+           <i class="fa fa-bars"></i>
 
 //- block content
 //-         div#container
