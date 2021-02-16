@@ -1,11 +1,47 @@
-//- layout.pug
+//- doctype html
+//- html
+//-   head
+//-     block title
+//-     block scripts
+//-     block style
+//-   body
+//-     block nav
+//-     block content
+//-     block footer
+
 doctype html
 html
   head
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     block title
+
     block scripts
+    script(src="/static/home.js")
+
     block style
+    style
+        include ../static/stylehome.css
+
   body
-    block nav            
+    block nav
+    div.top#navbar
+      a(href="/" id="a2") Home
+      a(href="/photos" id="a3") Photos
+      a(href="/contact" id="a4") Contact Me
+      a(href="/about" id="a5") About
+      a(href="javascript:void(0);" class="icon" onclick="myFunction()")
+        <i class="fa fa-bars"></i>
+    
     block content
+
     block footer
+      div.footer
+        //- div.footerIcon
+        //-     a(href="https://www.facebook.com/avk5147" class="fa fa-facebook")
+        //-     a(href="" class="fa fa-twitter")
+        //-     a(href="https://www.instagram.com/abhinav_5147/" class="fa fa-instagram")
+        div.copyright ©Copyright 2021 Abhinav - All right reserved.
