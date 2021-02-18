@@ -180,3 +180,11 @@ div a:hover{
     cursor: pointer;
     color: white;
 }
+.item{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .item{
+        display: block;
+    }
+}
