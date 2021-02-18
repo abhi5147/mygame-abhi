@@ -82,7 +82,7 @@ body{
 .board.circle .box:not(.x):not(.circle):hover::after{
     width: 70px;
     height: 70px;
-    background-color: hsl(0, 0%, 96%);
+    background-color: white;
 }
 .winning{
     display: none;
@@ -175,7 +175,7 @@ body{
     color: white;
 }
 body::before{
-    background: #234;
+    background: white;
     opacity: 0.8;
     content: "";
     width: 100%;
