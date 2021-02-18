@@ -1,4 +1,3 @@
-extends base.pug
 html
     head
         <meta charset="UTF-8">
@@ -25,12 +24,15 @@ html
                 div#box7.box
                 div#box8.box
                 div#box9.box
-        div.winning#winning 
+        div.winning#winning
             div.section1
-                div Game Over
-                div#text
-                div #[a(href="/snake") Play Again]
+                div#gameOver Game Over
+                div#text Score
+                div #[a(href="/snake", id="playAgain") Play Again]
         div#levelSection
-            div Choose Level
-            input(type="range", name="", id="level")
-            button#playBtn Play
+            div#levelContainer 
+                div#chooseLevel Choose Level
+                div#inputRange
+                    input(type="range", name="", id="level",min="1", max="10")
+                    div#getLevel
+                button#playBtn Play

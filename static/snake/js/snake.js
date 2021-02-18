@@ -4,10 +4,10 @@ export let SNAKE_SPEED = 0;
 
 document.getElementById('playBtn').addEventListener('click',level);
 function level(){
-    const temp = (document.getElementById('level').value)/10;
-    SNAKE_SPEED = Math.floor(temp);
+    SNAKE_SPEED = (document.getElementById('level').value)*1;
     document.getElementById('levelSection').style.display = 'none';
 }
+
 
 
 const snakeBody = [{ x: 10, y: 11 }]

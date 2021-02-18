@@ -8,6 +8,7 @@ let gameOver=false;
 const gameBoard = document.getElementById('game-board');
 
 function main(currentTime){
+    document.getElementById('getLevel').innerText = (document.getElementById('level').value)*1;
     if(getScore())
         totalScore+=SNAKE_SPEED;
     document.getElementById('b2').innerHTML = totalScore;
