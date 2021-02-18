@@ -207,7 +207,7 @@ body::before{
     }
     #levelContainer{
         width: 70%;
-        height: 80%;
+        height: 50%;
     }
     #chooseLevel{
         font-size: 20px;
@@ -223,15 +223,15 @@ body::before{
     }
     .section1{
         width: 70%;
-        height: 80%;
+        height: 50%;
     }
     #gameOver{
-        font-size: 20px;
+        font-size: 25px;
         position: relative;
         bottom: 30px;
     }
     #text{
-        font-size: 40px;
+        font-size: 20px;
         position: relative;
         bottom: 20px;
     }
