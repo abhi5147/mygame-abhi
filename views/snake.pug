@@ -1,38 +1,36 @@
 extends base.pug
+html
+    head
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        title Snake
+        script(src="/static/snake/js/game.js" defer type = "module")
+        link(rel="stylesheet", href="/static/snake/css/style.css")
 
-block title
-    title Snake
-
-block scripts
-    script(src="/static/snake/js/game.js" defer type = "module")
-
-block style
-    style
-        include ../static/snake/css/style.css
-
-block content
-    div.score#score
-        div#b1 Score : 
-        div#b2
-    div.container#container
-        div#game-board
-    div.item#item
-        div.section
-            div#box1.box
-            div#box2.box
-            div#box3.box
-            div#box4.box
-            div#box5.box
-            div#box6.box
-            div#box7.box
-            div#box8.box
-            div#box9.box
-    div.winning#winning 
-        div.section1
-            div Game Over
-            div#text
-            div #[a(href="/snake") Play Again]
-    div#levelSection
-        div Choose Level
-        input(type="range", name="", id="level")
-        button#playBtn Play
+    body
+        div.score#score
+            div#b1 Score : 
+            div#b2
+        div.container#container
+            div#game-board
+        div.item#item
+            div.section
+                div#box1.box
+                div#box2.box
+                div#box3.box
+                div#box4.box
+                div#box5.box
+                div#box6.box
+                div#box7.box
+                div#box8.box
+                div#box9.box
+        div.winning#winning 
+            div.section1
+                div Game Over
+                div#text
+                div #[a(href="/snake") Play Again]
+        div#levelSection
+            div Choose Level
+            input(type="range", name="", id="level")
+            button#playBtn Play
